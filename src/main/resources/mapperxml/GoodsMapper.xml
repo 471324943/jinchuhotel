@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hotel.mapper.GoodsMapper">
+  <resultMap id="BaseResultMap" type="com.hotel.domain.Goods">
+    <!--@mbg.generated generated on Thu Feb 13 21:15:18 CST 2020.-->
+    <id column="goods_id" jdbcType="INTEGER" property="goodsId" />
+    <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+    <result column="goods_type" jdbcType="VARCHAR" property="goodsType" />
+    <result column="specification" jdbcType="VARCHAR" property="specification" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Feb 13 21:15:18 CST 2020.-->
+    goods_id, goods_name, goods_type, specification, price
+  </sql>
+</mapper>
